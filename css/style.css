@@ -37,7 +37,7 @@
     height: 200px;
     position: relative;
     left: 10vw;
-    top: 34vh;
+    top: 30vh;
 }
 
 .left .content-button{
@@ -61,4 +61,90 @@
     background-color: transparent;
     cursor: pointer;
     transition: 0.2s ease;
+}
+
+.content-button button:nth-child(1){
+    background-color: #ec1321;
+    color: white;
+}
+
+button:hover{
+    background-color: #ec1321;
+    color: white;
+    transition: 0.2s ease;
+}
+
+.right{
+    width: 30%;
+    height: 100%;
+    right: 0;
+    background-color: #ec1321;
+    position: absolute;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    top: 0;
+    position: absolute;
+}
+
+.header #logo{
+    color: #ec1321;
+    font-family: "Brush Script MT";
+    position: relative;
+    margin: 30px 130px;
+    font-weight: bold;
+}
+
+.header .menu{
+    display: flex;
+    width: 500px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    left: 35%;
+    position: absolute;
+    top: 0;
+}
+
+.menu a{
+    display: flex;
+    margin: 25px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+.menu a:nth-child(1){
+    color: #ec1321;
+    font-weight: bold;
+}
+
+.menu a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    background-color: #ec1321;
+    transition: 0.3s ease;
+}
+
+.menu a:hover{
+    color: #ec1321;
+    transition: 0.2s ease;
+}
+
+.menu a:hover:after{
+    width: 100%;
+    transition: 0.2s ease;
+}
+
+img{
+    height: 600px;
+    right: 22%;
+    top: 17%;
+    position: absolute;
 }
